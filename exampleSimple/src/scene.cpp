@@ -20,7 +20,11 @@ void Scene::update() {
 
 void Scene::draw() {
 	for (auto videoOutput : videoOutputs) {
-		(*videoPlayers)[videoOutput.playerIndex]->draw(videoOutput.x, videoOutput.y);
+		ofPushMatrix();
+		ofTranslate(videoOutput.x, videoOutput.y);
+		ofScale(videoOutput.width / (*videoPlayers)[videoOutput.playerIndex]->getWidth(), videoOutput.height / (*videoPlayers)[videoOutput.playerIndex]->getHeight());
+		(*videoPlayers)[videoOutput.playerIndex]->draw(0, 0);
+		ofPopMatrix();
 	}
 	for (auto liveOutput : liveOutputs) {
 		(*liveInputs)[liveOutput.index]->draw(liveOutput.x, liveOutput.y, liveOutput.width, liveOutput.height);

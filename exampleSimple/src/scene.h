@@ -13,11 +13,19 @@ public:
 	Scene() {};
 	//Getters
 	float getDuration() { return duration; };
+	string getName() { return name; };
+	ofParameter<bool>* getToggleButton() { return &On; };
+	int getIndex() { return index; };
 
 	//Setters
 	void setVideoPlayers(vector<ofxDSHapVideoPlayer*>* _players) { videoPlayers = _players; };
 	void setLiveInputs(vector<shared_ptr<ofxBlackmagic::Input> >* _inputs) { liveInputs = _inputs; };
 	float setDuration(float _duration) { duration = _duration; };
+	void setIndex(int _index) { index = _index; };
+	void setName(string _name) { 
+		name = _name; 
+		On.set(name, false);
+	};
 
 	//Functionality
 	void update();
@@ -50,6 +58,12 @@ private:
 
 	vector<videoOutput> videoOutputs;
 	vector<liveOutput> liveOutputs;
+
+	string name;
+
+	int index;
+
+	ofParameter<bool> On;
 
 	void loadNewContent(videoOutput* video);
 };

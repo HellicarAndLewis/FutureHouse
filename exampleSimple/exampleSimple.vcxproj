@@ -93,12 +93,8 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;
+C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -116,12 +112,8 @@ C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\Exte
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>comsuppw.lib;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>comsuppw.lib;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;
+C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -138,12 +130,8 @@ C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\Exte
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;
+C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -163,12 +151,8 @@ C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\Exte
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;
-C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\addons\ofxGrabCam\src;..\..\..\addons\ofxUI\src;..\..\..\addons\ofxCvGui2\src;..\..\..\addons\ofxBlackmagic2\ofxBlackmagicLib;..\..\..\addons\ofxBlackmagic2\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxNestedFileLoader\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxHapPlayer\libs\HapSupport\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\src;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses;C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\External\snappy;
+C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxGui\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -220,6 +204,14 @@ C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\Exte
     <ClCompile Include="..\..\..\addons\ofxDSHapVideoPlayer\libs\External\snappy\snappy.cc" />
     <ClCompile Include="..\..\..\addons\ofxDSHapVideoPlayer\src\DSUncompressedSampleGrabber.cpp" />
     <ClCompile Include="..\..\..\addons\ofxDSHapVideoPlayer\src\ofxDSHapVideoPlayer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxLabel.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxPanel.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp" />
     <ClCompile Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
@@ -274,6 +266,15 @@ C:\Users\jgben\Desktop\of_v0.9.2_vs_release\addons\ofxDSHapVideoPlayer\libs\Exte
     <ClInclude Include="..\..\..\addons\ofxDSHapVideoPlayer\src\DSUncompressedSampleGrabber.h" />
     <ClInclude Include="..\..\..\addons\ofxDSHapVideoPlayer\src\HapShared.h" />
     <ClInclude Include="..\..\..\addons\ofxDSHapVideoPlayer\src\ofxDSHapVideoPlayer.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxLabel.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxPanel.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h" />
     <ClInclude Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\scene.h" />

@@ -5,6 +5,7 @@
 #include "ofxNestedFileLoader.h"
 #include "ofxDSHapVideoPlayer.h"
 #include "scene.h"
+#include "ofxGui.h"
 
 #define NUM_PLAYERS 9
 
@@ -14,6 +15,13 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+
+		struct playlist {
+			string name;
+			int index;
+			int internalIndex;
+			vector< pair<float, int> > scenesAndDurations;
+		};
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -25,6 +33,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		void exit();
+		void onSceneChanged(ofAbstractParameter & param);
+		void onPlaylistChanged(ofAbstractParameter & param);
+
 	
 		vector<shared_ptr<ofxBlackmagic::Input> > inputs;
 
@@ -32,7 +43,16 @@ class ofApp : public ofBaseApp{
 
 		vector<Scene> scenes;
 
-		ofFbo buffer;
+		ofxPanel gui;
+		ofParameterGroup scenesToggleGroup;
+		ofParameterGroup playlistToggleGroup;
+		ofParameter<int> sceneIndex;
+		ofParameter<bool> autoPlay;
+		ofParameter<int> playlistIndex;
 
-		int sceneIndex;
+		float timeOfLastSceneSwap;
+
+		vector<playlist> playlists;
+
+		ofFbo buffer;
 };
