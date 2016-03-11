@@ -3,8 +3,30 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.cpp">
-      <Filter>addons\ofxNestedFileLoader\src</Filter>
+    <ClCompile Include="src\scene.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxLabel.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxPanel.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp">
+      <Filter>addons\ofxGui\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxDSHapVideoPlayer\src\DSUncompressedSampleGrabber.cpp">
       <Filter>addons\ofxDSHapVideoPlayer\src</Filter>
@@ -117,36 +139,39 @@
     <ClCompile Include="..\..\..\addons\ofxDSHapVideoPlayer\libs\External\snappy\snappy.cc">
       <Filter>addons\ofxDSHapVideoPlayer\libs\External\snappy</Filter>
     </ClCompile>
-    <ClCompile Include="src\scene.cpp" />
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxLabel.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxPanel.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp">
-      <Filter>addons\ofxGui\src</Filter>
+    <ClCompile Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.cpp">
+      <Filter>addons\ofxNestedFileLoader\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h" />
-    <ClInclude Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.h">
-      <Filter>addons\ofxNestedFileLoader\src</Filter>
+    <ClInclude Include="src\scene.h" />
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxButton.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGui.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxLabel.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxPanel.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h">
+      <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxDSHapVideoPlayer\src\DSShared.h">
       <Filter>addons\ofxDSHapVideoPlayer\src</Filter>
@@ -292,33 +317,8 @@
     <ClInclude Include="..\..\..\addons\ofxDSHapVideoPlayer\libs\External\snappy\snappy.h">
       <Filter>addons\ofxDSHapVideoPlayer\libs\External\snappy</Filter>
     </ClInclude>
-    <ClInclude Include="src\scene.h" />
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxButton.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGui.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxLabel.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxPanel.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h">
-      <Filter>addons\ofxGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h">
-      <Filter>addons\ofxGui\src</Filter>
+    <ClInclude Include="..\..\..\addons\ofxNestedFileLoader\src\ofxNestedFileLoader.h">
+      <Filter>addons\ofxNestedFileLoader\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -326,40 +326,40 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="addons">
-      <UniqueIdentifier>{a36a7b60-240c-4470-ac99-36de5fa88a27}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxNestedFileLoader">
-      <UniqueIdentifier>{988b6201-0004-4beb-9909-759dfc36fbdc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxNestedFileLoader\src">
-      <UniqueIdentifier>{f93fdbb8-e698-4e69-b5cb-b0dc3784ee99}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer">
-      <UniqueIdentifier>{34feaeb0-11a9-4637-aa9a-6a0373bd0769}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\src">
-      <UniqueIdentifier>{be032d7c-2df4-4c24-84d5-43f68065efe9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\libs">
-      <UniqueIdentifier>{2473b11e-6032-4f3e-b2a9-101db2e8942a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External">
-      <UniqueIdentifier>{fb248384-3ee9-4f8e-93f7-ae3fceb6f541}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\DirectShow">
-      <UniqueIdentifier>{8afd00ab-525d-49b6-8b2b-c3490f364934}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses">
-      <UniqueIdentifier>{4f68c127-bf20-41a6-8fcb-caef3463ba4d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\snappy">
-      <UniqueIdentifier>{c5b5750c-39fe-4cc1-9e42-a4c4ef9fdb9a}</UniqueIdentifier>
+      <UniqueIdentifier>{9dc43f26-1dc3-4660-a50f-4f4f39481b34}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxGui">
-      <UniqueIdentifier>{c1b7b9b1-e1c2-40eb-95a6-644c46ec431e}</UniqueIdentifier>
+      <UniqueIdentifier>{5cf39a5d-fff1-491d-a8f9-78fd886681c9}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxGui\src">
-      <UniqueIdentifier>{8c9a416c-395a-43d4-804b-26a4186e916c}</UniqueIdentifier>
+      <UniqueIdentifier>{a91f9bc1-64d9-413f-8f8c-66d4fe615245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer">
+      <UniqueIdentifier>{b4a095f3-8c74-469d-ace8-79b4eb884460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\src">
+      <UniqueIdentifier>{8da96ac1-2bbd-4f91-a858-c135d687bd9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\libs">
+      <UniqueIdentifier>{d6b2d99b-b6f0-46d5-bf12-0774c571729b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External">
+      <UniqueIdentifier>{ad6a5d1a-f6e8-4df7-a857-c06db5ec1089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\DirectShow">
+      <UniqueIdentifier>{233a460d-6bc2-4025-90ba-1c1b8a9eac89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\DirectShow\BaseClasses">
+      <UniqueIdentifier>{e48ace30-36a4-4d85-9316-b5b32d6dd5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxDSHapVideoPlayer\libs\External\snappy">
+      <UniqueIdentifier>{56bcdd28-2ff7-4500-8355-a5c586155d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNestedFileLoader">
+      <UniqueIdentifier>{c9285b9a-58c3-4532-92f3-ffc92099c469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNestedFileLoader\src">
+      <UniqueIdentifier>{2d575610-abbc-486a-b6b1-efc693bfca0d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

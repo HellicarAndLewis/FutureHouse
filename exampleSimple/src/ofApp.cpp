@@ -4,7 +4,7 @@
 #define PREVIEW_HEIGHT 720
 
 //--------------------------------------------------------------
-void ofApp::setup(){
+void ofApp::setup() {
 	auto deviceList = ofxBlackmagic::Iterator::getDeviceList();
 
 	sceneIndex = 0;
@@ -25,15 +25,15 @@ void ofApp::setup(){
 	float bottom = gridHeight * 2;
 
 	ofVec4f topLeft1 = ofVec4f(left, top, gridWidth, gridHeight);
-	ofVec4f topLeft4 = ofVec4f(left, top, gridWidth*2, gridHeight*2);
-	ofVec4f topLeft9 = ofVec4f(left, top, gridWidth*3, gridHeight*3);
+	ofVec4f topLeft4 = ofVec4f(left, top, gridWidth * 2, gridHeight * 2);
+	ofVec4f topLeft9 = ofVec4f(left, top, gridWidth * 3, gridHeight * 3);
 	ofVec4f topMiddle1 = ofVec4f(middleX, top, gridWidth, gridHeight);
-	ofVec4f topMiddle4 = ofVec4f(middleX, top, gridWidth*2, gridHeight*2);
+	ofVec4f topMiddle4 = ofVec4f(middleX, top, gridWidth * 2, gridHeight * 2);
 	ofVec4f topRight1 = ofVec4f(right, top, gridWidth, gridHeight);
 	ofVec4f middleLeft1 = ofVec4f(left, middleY, gridWidth, gridHeight);
-	ofVec4f middleLeft4 = ofVec4f(left, middleY, gridWidth*2, gridHeight*2);
+	ofVec4f middleLeft4 = ofVec4f(left, middleY, gridWidth * 2, gridHeight * 2);
 	ofVec4f middleMiddle1 = ofVec4f(middleX, middleY, gridWidth, gridHeight);
-	ofVec4f middleMiddle4 = ofVec4f(middleX, middleY, gridWidth*2, gridHeight*2);
+	ofVec4f middleMiddle4 = ofVec4f(middleX, middleY, gridWidth * 2, gridHeight * 2);
 	ofVec4f middleRight1 = ofVec4f(right, middleY, gridWidth, gridHeight);
 	ofVec4f bottomLeft1 = ofVec4f(left, bottom, gridWidth, gridHeight);
 	ofVec4f bottomMiddle1 = ofVec4f(middleX, bottom, gridWidth, gridHeight);
@@ -154,7 +154,7 @@ void ofApp::setup(){
 
 	//Infleuncer ButlerReese
 	Scene influencerButlerReese;
-	influencerButlerReese.setName("Influencer Butler&Reese");
+	influencerButlerReese.setName("Influencer B&R");
 	influencerButlerReese.addVideo(vidNames, topLeft4);
 	influencerButlerReese.addVideo(vidNames, topRight1);
 	influencerButlerReese.addVideo(vidNames, middleRight1);
@@ -193,16 +193,72 @@ void ofApp::setup(){
 	}
 
 	gui.add(scenesToggleGroup);
-	gui.add(sceneIndex.set("Scene Number", 0, 0, scenes.size()-1));
+	gui.add(sceneIndex.set("Scene Number", 0, 0, scenes.size() - 1));
 
+	//Experience
 	playlist experienceplaylist;
 	experienceplaylist.name = "Experience";
-	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 0));
+	//First loop with yuki
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
 	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 7));
 	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
-	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 5));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 1));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 6));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 4));
+	//Second Loop with Iman
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 8));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 5));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 1));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 6));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 4));
+	//Third loop with Luka
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 9));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 5));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 1));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 6));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 4));
+	//Foruth Loop with B&R
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 10));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 5));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 1));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(15., 6));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(10., 11));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(300., 0));
+	experienceplaylist.scenesAndDurations.push_back(make_pair(30., 4));
 
 	playlists.push_back(experienceplaylist);
+
+	// NEEDS TO BE WAY LONGER, INCLUDE ALL INFLUENCERS!
+
+	//Event
+	playlist eventPlaylist;
+	eventPlaylist.name = "Event";
+	eventPlaylist.scenesAndDurations.push_back(make_pair(30., 0));
+	eventPlaylist.scenesAndDurations.push_back(make_pair(30., 12));
+
+	playlists.push_back(eventPlaylist);
+
 
 	playlistToggleGroup.setName("playlists");
 	for (int i = 0; i < playlists.size(); i++) {
@@ -215,50 +271,60 @@ void ofApp::setup(){
 	gui.add(playlistToggleGroup);
 	gui.add(playlistIndex);
 	gui.add(autoPlay.set("Auto Play", false));
+	gui.add(timeUntilNextSwap.set("Next Change", 30, 30, 0));
+	gui.add(currentPlaylistIndex.set("playlist Index", 0, 0, playlists[playlistIndex].scenesAndDurations.size()-1));
 
 	ofAddListener(scenesToggleGroup.parameterChangedE(), this, &ofApp::onSceneChanged);
+
+	ofAddListener(playlistToggleGroup.parameterChangedE(), this, &ofApp::onPlaylistChanged);
 
 	for (int i = 0; i < NUM_PLAYERS; i++) {
 		players.push_back(new ofxDSHapVideoPlayer());
 	}
 
-	for(auto device : deviceList) {
+	for (auto device : deviceList) {
 		auto input = shared_ptr<ofxBlackmagic::Input>(new ofxBlackmagic::Input());
-		auto mode = bmdModeHD1080i50;
+		auto mode = bmdModeHD720p50;
 		input->startCapture(device, mode);
 		input->setUseTexture(true);
 		this->inputs.push_back(input);
 	}
 
+	timeUntilNextSwap.setMin(playlists[playlistIndex].scenesAndDurations[playlists[playlistIndex].internalIndex].first);
+
 	ofBackground(127);
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
+void ofApp::update() {
 	scenes[sceneIndex].update();
+	float timeSinceLastSwap = ofGetElapsedTimef() - timeOfLastSceneSwap;
 	if (autoPlay) {
 		playlist* activePlaylist = &playlists[playlistIndex];
 		pair<float, int> currentPair = activePlaylist->scenesAndDurations[activePlaylist->internalIndex];
-		float timeSinceLastSwap = ofGetElapsedTimef() - timeOfLastSceneSwap;
 		if (timeSinceLastSwap > currentPair.first) {
 			activePlaylist->internalIndex++;
 			activePlaylist->internalIndex %= activePlaylist->scenesAndDurations.size();
 			scenesToggleGroup.getBool(activePlaylist->scenesAndDurations[activePlaylist->internalIndex].second).set(true);
+			timeUntilNextSwap.setMin(activePlaylist->scenesAndDurations[activePlaylist->internalIndex].first);
 		}
-		cout << activePlaylist->internalIndex << endl;
-		cout << currentPair.first - timeSinceLastSwap << endl;
+		timeUntilNextSwap.set(activePlaylist->scenesAndDurations[activePlaylist->internalIndex].first - timeSinceLastSwap);
+		currentPlaylistIndex.set(activePlaylist->internalIndex);
+	}
+	else {
+		timeOfLastSceneSwap = ofGetElapsedTimef();
 	}
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void ofApp::draw() {
 	buffer.begin();
-		ofClear(0);
-		scenes[sceneIndex].draw();
+	ofClear(0);
+	scenes[sceneIndex].draw();
 	buffer.end();
 	ofPushMatrix();
 	ofTranslate(ofGetScreenWidth(), 0);
-		buffer.draw(0, 0, ofGetScreenWidth(), ofGetScreenHeight());
+	buffer.draw(0, 0, ofGetScreenWidth(), ofGetScreenHeight());
 	ofPopMatrix();
 	ofPushMatrix();
 	ofTranslate(ofGetScreenWidth() / 2 - PREVIEW_WIDTH / 2, ofGetScreenHeight() / 2 - PREVIEW_HEIGHT / 2);
@@ -288,11 +354,12 @@ void ofApp::onSceneChanged(ofAbstractParameter & param) {
 //--------------------------------------------------------------
 void ofApp::onPlaylistChanged(ofAbstractParameter & param) {
 	string clickedName = param.getName();
-	for (auto it = playlists.begin(); it != playlists .end(); it++) {
+	for (auto it = playlists.begin(); it != playlists.end(); it++) {
 		string name = it->name;
 		if (name == clickedName) {
 			playlistToggleGroup.getBool(name).setWithoutEventNotifications(true);
-			sceneIndex = it->index;
+			playlistIndex = it->index;
+			currentPlaylistIndex.setMax(it->scenesAndDurations.size());
 		}
 		else {
 			playlistToggleGroup.getBool(name).setWithoutEventNotifications(false);
@@ -306,46 +373,46 @@ void ofApp::exit() {
 }
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key){
+void ofApp::keyPressed(int key) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::keyReleased(int key){
+void ofApp::keyReleased(int key) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
+void ofApp::gotMessage(ofMessage msg) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo) {
 
 }
